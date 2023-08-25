@@ -1,0 +1,12 @@
+.what-doing {
+  padding-bottom: 120px;
+}
+
+.what-doing-list {
+  display: flex;
+  gap: 24px;
+}
+
+.what-doing-list-item {
+  flex-basis: calc((100% - 2 * 24) / 3);
+}
