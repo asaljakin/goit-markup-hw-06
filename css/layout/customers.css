@@ -2,6 +2,14 @@
   padding: 96px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .customers {
     padding: 120px 0;
@@ -20,6 +28,8 @@
 @media screen and (min-width: 768px) {
   .customers-menu {
     display: flex;
+    align-items: center;
+    width: 584px;
     margin: 0 -12px;
   }
 }
