@@ -186,7 +186,7 @@
   }
 }
 
-@media screen and (max-width: 420px) and (max-width: 428px) {
+@media screen and (max-width: 428px) {
   .mobile-menu-contacts-tel {
     font-size: var(--h3-font-size);
     font-weight: 700;

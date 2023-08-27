@@ -59,7 +59,7 @@
   screen and (min-width: 1158px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(var(--grey-color), var(--grey-color)),
-      url(../../images/hero-tablet@x2.jpg);
+      url(../../images/hero@x2.jpg);
   }
 }
 
