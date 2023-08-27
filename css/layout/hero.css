@@ -1,32 +1,104 @@
 .hero {
-  max-width: 1440px;
+  width: 100%;
   background-color: var(--navy-blue-color);
   background-image: linear-gradient(var(--grey-color), var(--grey-color)),
-    url("../images/hero.jpg");
+    url("/images/hero-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2 / 1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(var(--grey-color), var(--grey-color)),
+      url(/images/hero-mobile@x2.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    min-width: 768px;
+    background-image: linear-gradient(var(--grey-color), var(--grey-color)),
+      url("/images/hero-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(var(--grey-color), var(--grey-color)),
+      url(/images/hero-tablet@x2.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    max-width: 1440px;
+    background-image: linear-gradient(var(--grey-color), var(--grey-color)),
+      url("/images/hero.jpg");
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1158px) and (-o-min-device-pixel-ratio: 2 / 1),
+  screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  screen and (min-width: 1158px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(var(--grey-color), var(--grey-color)),
+      url(/images/hero-tablet@x2.jpg);
+  }
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
+  row-gap: 72px;
   align-items: center;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-container {
+    row-gap: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-container {
+    row-gap: 48px;
+  }
+}
+
 .hero-title {
-  max-width: 496px;
+  max-width: 320px;
   text-align: center;
   color: var(--white-color);
-  font-size: var(--hero-font-size);
-  line-height: 1.07;
+  font-size: var(--h2-font-size);
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 496px;
+    font-size: var(--hero-font-size);
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+  }
 }
 
 .hero-btn {

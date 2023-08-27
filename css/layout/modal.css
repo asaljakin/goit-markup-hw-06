@@ -28,6 +28,13 @@
   padding: 72px 24px 24px;
 }
 
+@media screen and (max-width: 428px) {
+  .modal {
+    width: 392px;
+    padding: 72px 16px 24px;
+  }
+}
+
 .close-btn {
   display: flex;
   align-items: center;
